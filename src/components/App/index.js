@@ -1,10 +1,11 @@
 import React from "react";
-import "./index.css";
+import './index.css';
+import Paragraph from '../Paragraph';
 
 function App() {
   return (
     <div className="App">
-      <p>Hi from App</p>
+      <Paragraph text="Hi from app" />
     </div>
   );
 }
