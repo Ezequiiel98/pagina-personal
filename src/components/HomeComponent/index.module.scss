@@ -28,12 +28,32 @@
   outline: none;
   border-radius: 15px;
   transition: all .5s ease-in;
+  position: relative;
+  overflow: hidden;
+  
+  &::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all .5s ease;
+  }
 
   &:hover{
-    background-color: white;
-    border-color: rgb(19, 19, 19);
     color: black;
+    z-index: 2;
     cursor: pointer;
+
+    &::after{
+      z-index: -1;
+      width: 100%;
+      left: 0;
+
+      background-color: white;
+
+    }
   }
-  
+
 }
