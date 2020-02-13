@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+
 import './index.css';
-import Paragraph from '../Paragraph';
+import Home from '../../screens/Home';
 
 function App() {
   return (
     <div className="App">
-      <Paragraph text="Hi from app" />
+      <Home />
     </div>
   );
 }
