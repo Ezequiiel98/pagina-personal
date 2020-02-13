@@ -37,24 +37,28 @@ code {
 
   20% {
       transform: rotate(41deg);
+      opacity: .6;
   }
 
   40% {
       transform: rotate(81deg);
-  }
+      opacity: .5;
+    }
 
   60% {
       transform: rotate(122deg);
-
+    opacity: .4;
   }
 
   80% {
-      transform: rotate((204deg))
-  }
+      transform: rotate((204deg));
+      opacity: .3;
+    }
 
   100% {
       top: 90%;
-      transform: rotate(245deg)
+      transform: rotate(245deg);
+      opacity: .2;
   }
 }
 

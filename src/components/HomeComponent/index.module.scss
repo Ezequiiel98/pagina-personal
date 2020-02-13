@@ -1,15 +1,16 @@
 .container {
   max-width: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(-150px);
+  transform: translateX(-50px);
 }
 
 .presentation {
-  min-height: 50vh;
+  min-height: 40vh;
   position: relative;
   color: white;
 }
