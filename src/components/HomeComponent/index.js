@@ -85,15 +85,17 @@ class HomeComponent extends Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <div className={styles.presentation} ref={this.text}>
-          {' '}
+      <div className={styles.containter}>
+        <div className={styles.containerPresentation}>
+          <div className={styles.presentation} ref={this.text}>
+            {' '}
+          </div>
+          <Button
+            className={styles.button}
+            value={this.state.isFall ? 'Caer letras' : 'Subir letras'}
+            onClick={this.handleClick}
+          />
         </div>
-        <Button
-          className={styles.button}
-          value={this.state.isFall ? 'Caer letras' : 'Subir letras'}
-          onClick={this.handleClick}
-        />
       </div>
     );
   }
