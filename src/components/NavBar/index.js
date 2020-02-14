@@ -12,12 +12,11 @@ function NavBar() {
     event.preventDefault()
     if (i) {
       document.querySelector('#nav').style = ' height: 100%; width: 100%';
-      i = !i
     } else { 
       document.querySelector('#nav').style = ' height: 0; width: 0';
 
-      i = !i
     }
+    i = !i
   }
 
   let resizeW = () =>{
