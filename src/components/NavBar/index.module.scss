@@ -30,8 +30,8 @@
   .navBar {
     z-index: 2;
     height: auto;
-	border-radius: 0;
-	display: flex;
+    border-radius: 0;
+    display: flex;
     justify-content: flex-end;
     position: fixed;
     top: 0;
@@ -40,7 +40,7 @@
 
   .containerItems {
     display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
     margin-right: 50px;
   }
 }
