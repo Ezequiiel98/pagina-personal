@@ -1,0 +1,36 @@
+.containterBurger {
+  align-self: flex-end;
+  position: relative;
+}
+
+.burgerMenu {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+.burgerSpan {
+  content: " ";
+  width: 60px;
+  height: 5px;
+  top: 25px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.burgerSpan:nth-child(2) {
+  top: 40px;
+}
+
+.burgerSpan:nth-child(3) {
+  top: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .containterBurger {
+    display: none;
+  }
+}

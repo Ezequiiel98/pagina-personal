@@ -1,5 +1,8 @@
 import React from 'react';
 
+import nameMenus from './constants/nameMenu';
+import ButtonNav from './components/ButtonNav';
+import BurgerMenu from './components/BurgerMenu';
 import styles from './index.module.scss';
 
 function NavBar() {
@@ -22,43 +25,20 @@ function NavBar() {
       document.querySelector('#nav').style = ' height: auto; width: auto';
     }
   }
-  window.onresize = resizeW
+  window.onresize = resizeW;
 
   return (
     <div className={styles.containerNav}>
-      <div className={styles.containterBurger}>
-        <a href="#" className={styles.burgerMenu} onClick={handleClick}>
-          <span className={styles.burgerSpan}></span>
-          <span className={styles.burgerSpan}></span>
-          <span className={styles.burgerSpan}></span>
-        </a>
-      </div>
+      <BurgerMenu onClick={handleClick} />
       <nav id="nav" className={styles.navBar}>
         <ul className={styles.containerItems}>
-          <li className={styles.navItem}>
-            <a className={styles.itemLink} href="google.com" >
-              Inicio
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a className={styles.itemLink} href="google.com">
-              Sobre Mi
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a className={styles.itemLink} href="google.com">
-              Portafolio
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a className={styles.itemLink} href="google.com">
-              Contacto
-            </a>
-          </li>
+          {nameMenus.map(text => (
+            <ButtonNav key={text.id} contentButton={text.name} />
+          ))}
         </ul>
       </nav>
     </div>
-  )
+  );
 }
 
 export default NavBar;
