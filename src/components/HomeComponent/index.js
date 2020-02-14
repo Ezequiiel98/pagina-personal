@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import Button from './components/Button';
 import styles from './index.module.scss';
 
-const p = true;
 class HomeComponent extends Component {
   constructor(props) {
     super(props);
@@ -18,8 +17,6 @@ class HomeComponent extends Component {
   componentDidMount() {
     this.insertSpans();
   }
-
-  // Hola mi nombre es Ezequiel Aragon. Soy desarrollador web front-end junior en React
 
   insertSpans = () => {
     const paragraph = 'Lorem Lorem  Lorem  Lorem  Lorem  Lorem  Lorem  Lorem  Lorem  Lorem  Lorem ';
@@ -76,11 +73,11 @@ class HomeComponent extends Component {
   handleClick = () => {
     if (this.state.isFall) {
       this.downSpans(0);
-      this.setState({ isFall: false });
     } else {
       this.upSpans(0);
-      this.setState({ isFall: true });
     }
+
+    this.setState({ isFall: !this.state.isFall });
   };
 
   render() {
@@ -102,43 +99,3 @@ class HomeComponent extends Component {
 }
 
 export default HomeComponent;
-
-// let palabras = 'Hola mi nombre es Ezequiel Aragon. Soy desarrollador web front-end junior en React'
-// let palabrasContenedor = document.querySelector('.palabras')
-// let p = ''
-
-// for (let i = 0; i < palabras.length; i++) p += `<span>${palabras[i]}</span>`
-
-// palabrasContenedor.innerHTML = p
-
-// function nose (claseAgregar, claseBorrar, i, nombreFuncion){
-//    setTimeout(() => {
-//       palabrasSpan[i].classList.add(claseAgregar)
-//       palabrasSpan[i].classList.remove(claseBorrar)
-//       nombreFuncion(i + 1)
-
-//    }, 30);
-// }
-
-// function caer(i) {
-//    (i < palabrasSpan.length) ?   nose('caer','subir', i,caer) : false;
-// }
-
-// function subir(i) {
-//    (i < palabrasSpan.length) ? nose('subir','caer', i,subir) : false;
-// }
-
-// let btn = document.querySelector('#btn');
-// let btnCaer = true;
-
-// btn.addEventListener('click', () => {
-//    if (btnCaer) {
-//       caer(0)
-//       btnCaer = !btnCaer
-//       btn.innerText = 'Subir letras'
-//    } else {
-//       subir(0);
-//       btnCaer = !btnCaer
-//       btn.innerText = 'Caer letras'
-//    }
-// })
