@@ -8,22 +8,24 @@ import styles from './index.module.scss';
 function NavBar() {
   let i = true;
 
-  let handleClick = (event)=>{
-    event.preventDefault()
+  const handleClick = event => {
+    event.preventDefault();
+    const nav = document.querySelector('#nav');
+
     if (i) {
-      document.querySelector('#nav').style = ' height: 100%; width: 100%';
-    } else { 
-      document.querySelector('#nav').style = ' height: 0; width: 0';
-
+      nav.style = 'height: 100%; width: 100%';
+    } else {
+      nav.style = ' height: 0; width: 0';
     }
-    i = !i
-  }
+    i = !i;
+  };
 
-  let resizeW = () =>{
-    if(window.innerWidth >= 768){
+  const resizeW = () => {
+    const widthWindows = 768;
+    if (window.innerWidth >= widthWindows) {
       document.querySelector('#nav').style = ' height: auto; width: auto';
     }
-  }
+  };
   window.onresize = resizeW;
 
   return (
