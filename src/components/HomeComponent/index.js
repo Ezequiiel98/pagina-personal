@@ -51,34 +51,34 @@ class HomeComponent extends Component {
     });
   };
 
-  riseSpans = i => {
+  upSpans = i => {
     const spans = this.text.current.childNodes;
     if (i < spans.length) {
       setTimeout(() => {
-        spans[i].classList.add('rise');
-        spans[i].classList.remove('fall');
-        this.riseSpans(i + 1);
-      }, 30);
+        spans[i].classList.add(styles.up);
+        spans[i].classList.remove(styles.down);
+        this.upSpans(i + 1);
+      }, 4);
     }
   };
 
-  fallSpans = i => {
+  downSpans = i => {
     const spans = this.text.current.childNodes;
     if (i < spans.length) {
       setTimeout(() => {
-        spans[i].classList.add('fall');
-        spans[i].classList.remove('rise');
-        this.fallSpans(i + 1);
-      }, 30);
+        spans[i].classList.add(styles.down);
+        spans[i].classList.remove(styles.up);
+        this.downSpans(i + 1);
+      }, 4);
     }
   };
 
   handleClick = () => {
     if (this.state.isFall) {
-      this.fallSpans(0);
+      this.downSpans(0);
       this.setState({ isFall: false });
     } else {
-      this.riseSpans(0);
+      this.upSpans(0);
       this.setState({ isFall: true });
     }
   };
