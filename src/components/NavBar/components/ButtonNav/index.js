@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 function ButtonNav({ contentButton }) {
   return (
     <li className={styles.navItem}>
-      <a className={styles.itemLink} href="#inicio">
+      <a className={styles.itemLink} href="/inicio">
         {contentButton}
       </a>
     </li>
