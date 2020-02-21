@@ -5,7 +5,7 @@ module.exports = {
   },
   'extends': [
     'plugin:react/recommended',
-    'eslint-config-wolox-react',
+    'eslint-config-wolox',
   ],
   'plugins': [
     'react'

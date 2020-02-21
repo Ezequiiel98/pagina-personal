@@ -1,11 +1,11 @@
 import React from "react";
 import './index.css';
-import Paragraph from '../Paragraph';
+import Portafolio from '../Portafolio';
 
 function App() {
   return (
     <div className="App">
-      <Paragraph text="Hi from app" />
+      <Portafolio text="Hi from app" />
     </div>
   );
 }
