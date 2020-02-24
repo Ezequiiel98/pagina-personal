@@ -11,8 +11,8 @@ function CardProyect({ urlImg, onClick, title, indexSelected, details }) {
       <p className={styles.subTitle}>{details}</p>
       <img src={urlImg} className={styles.img} />
       <button type="button" className={styles.btn} onClick={handleClick}>
-        Ver mas
-      </button> 
+        Ver Más
+      </button>
     </div>
   );
 }

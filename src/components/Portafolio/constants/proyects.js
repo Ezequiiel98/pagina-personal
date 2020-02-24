@@ -1,3 +1,4 @@
+import proyectZero from '../asset/img/proyect-0.png';
 import proyectOne from '../asset/img/proyect-1.jpg';
 import proyectTwo from '../asset/img/proyect-2.jpg';
 import proyectThree from '../asset/img/proyect-3.jpg';
@@ -5,7 +6,7 @@ import proyectThree from '../asset/img/proyect-3.jpg';
 const proyects = [
   {
     id: 0,
-    urlImg: proyectOne,
+    urlImg: proyectZero,
     title: 'Harry Potter',
     details: 'HTML / CSS ',
     description:

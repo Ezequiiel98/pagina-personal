@@ -1,7 +1,7 @@
 .card {
 	position: relative;
 	position: relative;
-	height: 350px;
+	height: 320px;
 	text-align: center;
 	color: white;
 	display: flex;
@@ -13,7 +13,7 @@
 		width: 100%;
 		height: 0px;
 		background-color: rgb(31, 31, 31);
-		transition: all .5s ease-in;
+		transition: all .4s ease-in;
 
 	}
 
@@ -42,8 +42,13 @@
 		top: 10%;
 	}
 
+	&:hover .subTitle{
+		top: 30%;
+	}
+
+
 	&:hover .btn{
-		bottom: 28%;
+		bottom: 25%;
 
 	}
 }
@@ -54,24 +59,24 @@
 	top: -20px;
 	color: white;
 	opacity: 0;
-	transition: all .5s ease .2s;
+	transition: all .4s ease .25s;
 	font-size: 40px;
 }
 
 .subTitle{
 	position: absolute;
 	width: 100%;
-	top: 30%;
+	top: 0;
 	font-size: 20px;
 	left: 0%;
 	color: white;
 	opacity: 0;
-	transition: all .5s ease .2s;
+	transition: all .4s ease .2s;
 }
 
 .img {
 	width: 400px;
-	height: 350px;
+	height: 320px;
 	object-fit: cover;
 	
 }
@@ -83,7 +88,7 @@
 	transform: translateX(-50%);
 	z-index: 1;
 	opacity: 0;
-	transition: all .5s ease .2s;
+	transition: all .4s ease .2s;
 	padding: 15px 30px;
 	background-color: transparent;
 	outline: none;

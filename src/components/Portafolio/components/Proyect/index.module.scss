@@ -1,0 +1,130 @@
+.proyect{
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.658);
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	min-height: 100vh;
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
+
+
+.containter {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: white;
+  background-color: rgb(31, 31, 31);
+  border: 5px solid white;	
+  animation: show .4s ease;
+	padding: 20px;
+	position: relative;
+}
+
+@keyframes show{
+	from{
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	
+	to{
+		transform: scale(1);
+		opacity: 1;
+		
+	}
+}
+
+.title {
+	min-width: 100%;
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 30px;
+	align-self: flex-start;
+}
+
+.img {
+	border: 5px solid white;
+	align-self: flex-start;
+	margin-top: auto;
+	max-width: 90%;
+}
+
+.description{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin-top: auto;
+}
+
+
+@media screen and (min-width: 768px){
+	.title{
+		align-self: center;
+	}
+	.img{
+		margin: 0;
+		margin-right: 30px;
+		max-width: 55%;
+		height: 390px;
+
+	}
+
+	.description {
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		max-width: 40% ;
+		max-height: 68%;
+	}
+	.btnProyect{
+		margin-top: auto;
+	}
+}
+
+
+.btn{
+	color: white;
+	font-weight: bold;
+	outline: none;
+	transition: all .5s ease;
+	background-color: transparent;
+
+}
+
+.btnClose {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 45px;
+	border: none;
+	padding:0 ;
+	padding: 5px 10px;
+
+	&:hover{
+		cursor: pointer;
+		opacity: .6;
+	}
+
+}
+
+
+
+.btnProyect{
+	padding: 20px 15px;
+	border: 3px solid white;
+	border-radius: 20px;
+	font-size: 20px;
+	align-self: flex-end;
+	margin-left: auto;
+
+	&:hover{
+		cursor: pointer;
+		background-color: white;
+		color: black;
+	}
+}
