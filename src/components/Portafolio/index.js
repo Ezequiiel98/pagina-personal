@@ -24,6 +24,7 @@ class Portafolio extends React.Component {
             indexSelected={proyect.id}
             urlImg={proyect.urlImg}
             title={proyect.title}
+            details={proyect.details}
             onClick={this.openModal}
           />
         ))}

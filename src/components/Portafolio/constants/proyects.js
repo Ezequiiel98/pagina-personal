@@ -7,6 +7,7 @@ const proyects = [
     id: 0,
     urlImg: proyectOne,
     title: 'Harry Potter',
+    details: 'HTML / CSS ',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin bibendum semper hendrerit.'
   },
@@ -14,6 +15,7 @@ const proyects = [
     id: 1,
     urlImg: proyectTwo,
     title: 'Proyect 2',
+    details: 'HTML / CSS / JS',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin bibendum semper hendrerit.'
   },
@@ -21,29 +23,34 @@ const proyects = [
     id: 2,
     urlImg: proyectThree,
     title: 'Proyect 3',
+    details: 'HTML / CSS / JS',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin bibendum semper hendrerit.'
   },
   {
     id: 3,
-    urlImg: proyectOne,
-    title: 'Harry Potter',
+    urlImg: proyectTwo,
+    title: 'Proyect 2',
+    details: 'HTML / CSS / JS',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin bibendum semper hendrerit.'
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin     bibendum semper hendrerit.'
   },
   {
     id: 4,
-    urlImg: proyectTwo,
-    title: 'Proyect 2',
+    urlImg: proyectThree,
+    title: 'Proyect 3',
+    details: 'HTML / CSS / JS / REACT.JS',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin bibendum semper hendrerit.'
   },
   {
     id: 5,
-    urlImg: proyectThree,
-    title: 'Proyect 3',
+    urlImg: proyectOne,
+    title: 'Harry Potter',
+    details: 'HTML / CSS / JS / REACT.JS',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida leo at egestas dictum. Ut posuere, velit rutrum molestie condimentum, nulla leo luctus libero, nec ultrices nulla ipsum in felis. In sollicitudin posuere tortor, ac ultricies lacus pretium eget. Proin bibendum semper hendrerit.'
+    
   }
 ];
 
