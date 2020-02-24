@@ -1,0 +1,103 @@
+.card {
+	position: relative;
+	position: relative;
+	height: 350px;
+	text-align: center;
+	color: white;
+	display: flex;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 0px;
+		background-color: rgb(31, 31, 31);
+		transition: all .5s ease-in;
+
+	}
+
+	&::before{
+		top: 0;
+		left:0;
+	}
+
+	&::after{
+		bottom: 0;
+		left:0;
+	}
+
+	&:hover::after,
+	&:hover::before{
+		height: 50%;
+	}
+
+	&:hover .title,
+	&:hover .btn,
+	&:hover .subTitle{
+		opacity: 1;
+	}
+	
+	&:hover .title{
+		top: 10%;
+	}
+
+	&:hover .btn{
+		bottom: 28%;
+
+	}
+}
+
+.title{
+	position: absolute;
+	width: 100%;
+	top: -20px;
+	color: white;
+	opacity: 0;
+	transition: all .5s ease .2s;
+	font-size: 40px;
+}
+
+.subTitle{
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	font-size: 20px;
+	left: 0%;
+	color: white;
+	opacity: 0;
+	transition: all .5s ease .2s;
+}
+
+.img {
+	width: 400px;
+	height: 350px;
+	object-fit: cover;
+	
+}
+
+.btn {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	opacity: 0;
+	transition: all .5s ease .2s;
+	padding: 15px 30px;
+	background-color: transparent;
+	outline: none;
+	border: 3px solid white;
+	border-radius: 20px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all .5 ease;
+
+	&:hover{
+		cursor: pointer;
+		background-color: white;
+		color: black;
+	}
+}
+

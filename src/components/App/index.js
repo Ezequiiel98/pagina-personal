@@ -1,6 +1,7 @@
-import React from "react";
-import './index.css';
+import React from 'react';
+
 import Portafolio from '../Portafolio';
+import './index.css';
 
 function App() {
   return (
